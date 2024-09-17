@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+    background-color: rgb(246, 246, 210);
+    
+    
+}
+.contenedor{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+.verde{
+    background-color: greenyellow;
+    width: 20%;
+    height: 90px;
+}
+.gris{
+    background-color: grey;
+    width: 78%;
+    height: 90px;
+}
+.crema{
+    background-color: bisque;
+    border: solid black;
+    width: 100%;
+    height: 23px;
+}
+.cajadelmedio{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor2{
+    width: 90vw;
+    display: flex;
+
+    flex-direction: row;
+
+}
+.boxisq{
+    display: flex;
+   
+}
+.boxder{
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around; 
+    align-content: space-evenly; 
+    height: 48%;
+    width: 84%;
+    gap: 10px;
+    
+}
+.violeta{
+    
+    background-color: rgb(175, 20, 175);
+    width: 20vw;
+    height: 100%;
+}
+.celeste{
+    background-color: lightskyblue;
+    width: 48%;
+    height: 170px;
+}
+.rosa{
+    background-color: fuchsia;
+    width: 48%;
+    height: 170px;
+}
+.naranja{
+    background-color: orange;  
+    width: 98%;
+    height: 20vh;
+    align-self: flex-end;
+   
+}
+
+.cian{
+    background-color: lightseagreen;
+    border: dashed black;
+    width: 100%;
+    height: 150px;
+    
+}

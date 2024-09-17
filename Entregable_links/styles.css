@@ -1,0 +1,84 @@
+body{
+    background: rgb(83,107,230);
+    background: radial-gradient(circle, rgba(83,107,230,1) 0%, rgba(181,89,209,1) 100%);
+}
+.tarea{
+    font-size: 3em;
+    background-color: black;
+    color: yellow;
+}
+.tarea:visited{
+    font-size: 2em;
+    background-color: rgb(254, 43, 6);
+}
+.tarea:hover{
+    background-color: rgb(115, 255, 0);
+    cursor: crosshair;
+}
+
+.centrar{
+    align-self: center;
+}
+
+ul>li>a:visited{
+    color: yellow;
+}
+ul li a:visited{
+    color: rgb(130, 13, 13);
+}
+ul a:active{
+    font-size: 3em;
+    color: aqua;
+    background-color: black;
+    
+}
+ul a:visited{
+    font-size: 3em;
+    color: blueviolet ;
+    background-color: greenyellow;
+}
+.linkgoogle {
+    color: green;
+
+}
+.listas{
+    background-color: chocolate;
+    border: 3px black dotted;
+    width: fit-content;
+    padding: 1em;
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-evenly;
+    height:  20em;
+    width: 30em;
+    border: solid;
+    border-color: black;
+    background-color: yellow;
+    padding: 10px;
+}
+.parrafo:hover{
+    background-color: aqua;
+}
+.colorverde:hover{
+    color: rgb(15, 191, 27);
+    background-color: brown;
+    cursor:crosshair;
+}
+
+.boxSuperior{
+display: flex;
+flex-direction: column;
+padding-bottom: 1em;
+
+}
+h1{
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    outline-color: blueviolet;
+    border: solid crimson dotted 3px;
+    color: rgb(119, 27, 64);
+}
