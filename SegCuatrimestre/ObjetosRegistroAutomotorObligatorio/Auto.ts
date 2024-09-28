@@ -17,6 +17,15 @@ export class Auto {
     getModelo():string{
         return this.modelo
     }
+    getAnio():number{
+        return this.anio
+    }
+    getPuertas():number{
+        return this.puertas
+    }
+    getColor():string{
+        return this.color
+    }
 
 
 
@@ -24,4 +33,17 @@ export class Auto {
     setModelo(nuevoModelo:string):void{
         this.modelo = nuevoModelo
     }
+
+    
+    setAnio(nuevoAnio:number):void{
+        this.anio = nuevoAnio
     }
+    
+    setPuertas(nuevoPuertas:number):void{
+        this.puertas= nuevoPuertas
+    }
+    
+    setColor(nuevoColor:string):void{
+        this.color = nuevoColor
+    }
+}
