@@ -1,10 +1,25 @@
 import { Auto } from "./Auto";
-import { Camiones } from "./Camion";
-import { Motos } from "./Moto";
+import { Camion } from "./Camion";
+import { Moto } from "./Moto";
 
 
 
+class RegistroAutomotor {
+    private Auto: Auto
+    private Camion: Camion
+    private Moto: Moto
 
+//Constructor
+    constructor(Auto:Auto, Camion:Camion, Moto:Moto){
+    this.Auto=Auto
+    this.Camion=Camion
+    this.Moto=Moto
+    
+    }
+
+
+
+}
 
 
 
