@@ -27,10 +27,10 @@ export class RegistroAutomotor {
     listarCamiones() {
         console.log("Listado de Camiones:");
         this.Camiones.forEach((camion, index) => {
-            console.log(`Camión ${index + 1}: ${camion.getMarca()} ${camion.getModelo()} (${camion.getAnio()}), Color: ${camion.getColor()} kg`);
+            console.log(`Camión ${index + 1}: ${camion.getMarca()} ${camion.getModelo()} (${camion.getAnio()}), Color: ${camion.getColor()}`);
         });
     }
-    // Métodos para modificar vehículos (en este caso sólo el primero encontrado)
+    // Métodos para modificar vehículos
     modificarAuto(index, modelo, marca, anio, color) {
         if (index >= 0 && index < this.Autos.length) {
             const auto = this.Autos[index];

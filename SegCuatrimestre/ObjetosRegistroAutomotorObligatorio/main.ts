@@ -3,10 +3,7 @@ import { Camion } from "./Camion.js";
 import { Moto } from "./Moto.js";
 import { RegistroAutomotor } from "./RegistroAutomotor.js";
 
-
-
         const registro = new RegistroAutomotor();
-
         const auto = new Auto("Toyota", 2020, "Corolla", "Verde");
         const moto = new Moto("Honda", 2022, 500, "CB500X");
         const camion = new Camion("Mercedes", 2019, "Actros", "Rojo");

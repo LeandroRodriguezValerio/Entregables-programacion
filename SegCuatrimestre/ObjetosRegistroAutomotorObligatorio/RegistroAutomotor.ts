@@ -39,11 +39,11 @@ public listarMotos(): void {
 public listarCamiones(): void {
     console.log("Listado de Camiones:");
     this.Camiones.forEach((camion, index) => {
-        console.log(`Camión ${index + 1}: ${camion.getMarca()} ${camion.getModelo()} (${camion.getAnio()}), Color: ${camion.getColor()} kg`);
+        console.log(`Camión ${index + 1}: ${camion.getMarca()} ${camion.getModelo()} (${camion.getAnio()}), Color: ${camion.getColor()}`);
     });
 }
 
-// Métodos para modificar vehículos (en este caso sólo el primero encontrado)
+// Métodos para modificar vehículos
 public modificarAuto(index: number,  modelo: string, marca: string, anio: number, color: string): boolean {
     if (index >= 0 && index < this.Autos.length) {
         const auto = this.Autos[index];
