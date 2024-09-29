@@ -1,14 +1,14 @@
 export class Camion {
     private modelo: string
-    private longitud: number
+    private marca: string
     private color: string
     private anio:number
     
     //Constructor
-    constructor(modelo:string, anio:number, longitud:number , color:string){
+    constructor(modelo:string, anio:number, marca:string , color:string){
     this.modelo=modelo
     this.anio=anio
-    this.longitud=longitud
+    this.marca=marca
     this.color=color
         
     }
@@ -19,8 +19,8 @@ export class Camion {
     getAnio():number{
         return this.anio
     }
-    getlongitud():number{
-        return this.longitud
+    getMarca():string{
+        return this.marca
     }
     getColor():string{
         return this.color
@@ -38,8 +38,8 @@ export class Camion {
         this.anio = nuevoAnio
     }
     
-    setlongitud(nuevolongitud:number):void{
-        this.longitud= nuevolongitud
+    setMarca(nuevoMarca:string):void{
+        this.marca= nuevoMarca
     }
     
     setColor(nuevoColor:string):void{

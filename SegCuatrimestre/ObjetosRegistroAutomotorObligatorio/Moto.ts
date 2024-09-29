@@ -1,15 +1,15 @@
 export class Moto {
     private modelo: string
     private cilindrada: number
-    private color: string
+    private marca: string
     private anio:number
     
     //Constructor
-    constructor(modelo:string, anio:number, cilindrada:number , color:string){
+    constructor(modelo:string, anio:number, cilindrada:number , marca:string){
     this.modelo=modelo
     this.anio=anio
     this.cilindrada=cilindrada
-    this.color=color
+    this.marca=marca
         
     }
     //getters
@@ -19,11 +19,11 @@ export class Moto {
     getAnio():number{
         return this.anio
     }
-    getcilindrada():number{
+    getCilindrada():number{
         return this.cilindrada
     }
-    getColor():string{
-        return this.color
+    getMarca():string{
+        return this.marca
     }
 
 
@@ -38,11 +38,11 @@ export class Moto {
         this.anio = nuevoAnio
     }
     
-    setcilindrada(nuevocilindrada:number):void{
-        this.cilindrada= nuevocilindrada
+    setCilindrada(nuevoCilindrada:number):void{
+        this.cilindrada= nuevoCilindrada
     }
     
-    setColor(nuevoColor:string):void{
-        this.color = nuevoColor
+    setMarca(nuevoMarca:string):void{
+        this.marca = nuevoMarca
     }
 }

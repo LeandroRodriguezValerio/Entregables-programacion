@@ -1,0 +1,89 @@
+export class RegistroAutomotor {
+    Autos = [];
+    Camiones = [];
+    Motos = [];
+    agregarAuto(auto) {
+        this.Autos.push(auto);
+    }
+    agregarMoto(moto) {
+        this.Motos.push(moto);
+    }
+    agregarCamion(camion) {
+        this.Camiones.push(camion);
+    }
+    // Métodos para listar todos los vehículos
+    listarAutos() {
+        console.log("Listado de Autos:");
+        this.Autos.forEach((auto, index) => {
+            console.log(`Auto ${index + 1}: ${auto.getMarca()} ${auto.getModelo()} (${auto.getAnio()}), Color: ${auto.getColor()}`);
+        });
+    }
+    listarMotos() {
+        console.log("Listado de Motos:");
+        this.Motos.forEach((moto, index) => {
+            console.log(`Moto ${index + 1}: ${moto.getMarca()} ${moto.getModelo()} (${moto.getAnio()}), Cilindrada: ${moto.getCilindrada()} cc`);
+        });
+    }
+    listarCamiones() {
+        console.log("Listado de Camiones:");
+        this.Camiones.forEach((camion, index) => {
+            console.log(`Camión ${index + 1}: ${camion.getMarca()} ${camion.getModelo()} (${camion.getAnio()}), Color: ${camion.getColor()} kg`);
+        });
+    }
+    // Métodos para modificar vehículos (en este caso sólo el primero encontrado)
+    modificarAuto(index, modelo, marca, anio, color) {
+        if (index >= 0 && index < this.Autos.length) {
+            const auto = this.Autos[index];
+            auto.setModelo(modelo);
+            auto.setMarca(marca);
+            auto.setAnio(anio);
+            auto.setColor(color);
+            return true;
+        }
+        return false;
+    }
+    modificarMoto(index, marca, modelo, anio, cilindrada) {
+        if (index >= 0 && index < this.Motos.length) {
+            const moto = this.Motos[index];
+            moto.setMarca(marca);
+            moto.setModelo(modelo);
+            moto.setAnio(anio);
+            moto.setCilindrada(cilindrada);
+            return true;
+        }
+        return false;
+    }
+    modificarCamion(index, modelo, anio, marca, color) {
+        if (index >= 0 && index < this.Camiones.length) {
+            const camion = this.Camiones[index];
+            camion.setModelo(modelo);
+            camion.setAnio(anio);
+            camion.setMarca(marca);
+            camion.setColor(color);
+            return true;
+        }
+        return false;
+    }
+    // Métodos para eliminar vehículos
+    darDeBajaAuto(index) {
+        if (index >= 0 && index < this.Autos.length) {
+            this.Autos.splice(index, 1);
+            return true;
+        }
+        return false;
+    }
+    darDeBajaMoto(index) {
+        if (index >= 0 && index < this.Motos.length) {
+            this.Motos.splice(index, 1);
+            return true;
+        }
+        return false;
+    }
+    darDeBajaCamion(index) {
+        if (index >= 0 && index < this.Camiones.length) {
+            this.Camiones.splice(index, 1);
+            return true;
+        }
+        return false;
+    }
+}

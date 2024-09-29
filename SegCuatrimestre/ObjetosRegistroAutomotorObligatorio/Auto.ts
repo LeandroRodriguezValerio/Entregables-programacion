@@ -1,15 +1,15 @@
 export class Auto {
 
     private modelo: string
-    private puertas: number
+    private marca: string
     private color: string
     private anio:number
     
     //Constructor
-    constructor(modelo:string, anio:number, puertas:number , color:string){
+    constructor(modelo:string, anio:number, marca:string , color:string){
     this.modelo=modelo
     this.anio=anio
-    this.puertas=puertas
+    this.marca=marca
     this.color=color
         
     }
@@ -20,8 +20,8 @@ export class Auto {
     getAnio():number{
         return this.anio
     }
-    getPuertas():number{
-        return this.puertas
+    getMarca():string{
+        return this.marca
     }
     getColor():string{
         return this.color
@@ -39,8 +39,8 @@ export class Auto {
         this.anio = nuevoAnio
     }
     
-    setPuertas(nuevoPuertas:number):void{
-        this.puertas= nuevoPuertas
+    setMarca(nuevoMarca:string):void{
+        this.marca= nuevoMarca
     }
     
     setColor(nuevoColor:string):void{
