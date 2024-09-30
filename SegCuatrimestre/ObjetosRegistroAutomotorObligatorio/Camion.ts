@@ -27,7 +27,6 @@ export class Camion {
     }
 
 
-
     //setters
     setModelo(nuevoModelo:string):void{
         this.modelo = nuevoModelo

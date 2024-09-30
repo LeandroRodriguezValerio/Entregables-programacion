@@ -11,7 +11,8 @@ export class Auto {
     this.anio=anio
     this.marca=marca
     this.color=color
-        
+      
+    
     }
     //getters
     getModelo():string{

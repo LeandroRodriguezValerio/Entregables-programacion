@@ -37,3 +37,4 @@ export class Camion {
         this.color = nuevoColor;
     }
 }
+

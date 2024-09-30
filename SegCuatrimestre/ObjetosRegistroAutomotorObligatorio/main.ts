@@ -8,6 +8,7 @@ import { RegistroAutomotor } from "./RegistroAutomotor.js";
         const moto = new Moto("Honda", 2022, 500, "CB500X");
         const camion = new Camion("Mercedes", 2019, "Actros", "Rojo");
 
+        
         // Agregar vehículos
         registro.agregarAuto(auto);
         registro.agregarMoto(moto);

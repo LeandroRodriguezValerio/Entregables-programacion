@@ -37,3 +37,4 @@ export class Auto {
         this.color = nuevoColor;
     }
 }
+

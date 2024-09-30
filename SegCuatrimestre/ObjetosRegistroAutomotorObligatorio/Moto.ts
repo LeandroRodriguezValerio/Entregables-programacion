@@ -10,7 +10,8 @@ export class Moto {
     this.anio=anio
     this.cilindrada=cilindrada
     this.marca=marca
-        
+      
+    
     }
     //getters
     getModelo():string{

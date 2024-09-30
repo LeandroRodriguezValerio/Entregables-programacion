@@ -3,7 +3,6 @@ import { Camion } from "./Camion";
 import { Moto } from "./Moto";
 
 
-
 export class RegistroAutomotor {
     
     private Autos: Auto[]=[]
@@ -21,6 +20,8 @@ export class RegistroAutomotor {
     public agregarCamion(camion: Camion): void {
         this.Camiones.push(camion);
     }
+
+    
 // Métodos para listar todos los vehículos
 public listarAutos(): void {
     console.log("Listado de Autos:");
