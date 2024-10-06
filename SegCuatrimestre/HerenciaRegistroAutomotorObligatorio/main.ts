@@ -5,8 +5,8 @@ import { RegistroAutomotor } from "./RegistroAutomotor.js";
 
         const registro = new RegistroAutomotor();
         const auto = new Auto("Toyota", 2020, "Corolla", "Verde");
-        const moto = new Moto("Honda", 2022, 500, "CB500X");
-        const camion = new Camion("Mercedes", 2019, "Actros", "Rojo");
+        const moto = new Moto("Honda", 2022, 500, "CB500X",2,4);
+        const camion = new Camion("Mercedes", 2019, "Actros", "Blanco",6,60);
 
         
         // Agregar vehículos
@@ -21,6 +21,9 @@ import { RegistroAutomotor } from "./RegistroAutomotor.js";
 
         // Modificar un vehículo
         registro.modificarAuto(0, "Toyota", "Camry", 2021, "Verde");
+        registro.modificarMoto(0,"Zanella","CB500X", 2018, 500, 2,3.8)
+
+        registro.listarMotos();
 
         // Eliminar una moto
         registro.darDeBajaMoto(0);

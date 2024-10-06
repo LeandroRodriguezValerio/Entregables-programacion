@@ -1,11 +1,13 @@
-export class Moto {
+import { Vehiculo } from "./Vehiculo.js";
+export class Moto extends Vehiculo {
     private modelo: string
     private cilindrada: number
     private marca: string
     private anio:number
     
     //Constructor
-    constructor(modelo:string, anio:number, cilindrada:number , marca:string){
+    constructor(modelo:string, anio:number, cilindrada:number , marca:string, cantRuedas:number, combustible:number){
+        super(cantRuedas,combustible)
     this.modelo=modelo
     this.anio=anio
     this.cilindrada=cilindrada

@@ -1,10 +1,12 @@
-export class Moto {
+import { Vehiculo } from "./Vehiculo.js";
+export class Moto extends Vehiculo {
     modelo;
     cilindrada;
     marca;
     anio;
     //Constructor
-    constructor(modelo, anio, cilindrada, marca) {
+    constructor(modelo, anio, cilindrada, marca, cantRuedas, combustible) {
+        super(cantRuedas, combustible);
         this.modelo = modelo;
         this.anio = anio;
         this.cilindrada = cilindrada;
@@ -37,4 +39,3 @@ export class Moto {
         this.marca = nuevoMarca;
     }
 }
-

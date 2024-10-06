@@ -1,10 +1,12 @@
-export class Camion {
+import { Vehiculo } from "./Vehiculo.js";
+export class Camion extends Vehiculo {
     modelo;
     marca;
     color;
     anio;
     //Constructor
-    constructor(modelo, anio, marca, color) {
+    constructor(modelo, anio, marca, color, cantRuedas, combustible) {
+        super(cantRuedas, combustible);
         this.modelo = modelo;
         this.anio = anio;
         this.marca = marca;
@@ -37,4 +39,3 @@ export class Camion {
         this.color = nuevoColor;
     }
 }
-
