@@ -1,6 +1,6 @@
-import { Mago } from "./mago";
-import { Tanque } from "./tanque";
-import { Luchador } from "./luchador";
+import { Mago } from "./mago.js";
+import { Tanque } from "./tanque.js";
+import { Luchador } from "./luchador.js";
 
 
 

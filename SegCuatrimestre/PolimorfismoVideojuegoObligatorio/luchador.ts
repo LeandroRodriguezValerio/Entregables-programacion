@@ -1,4 +1,4 @@
-import { PersonajeDefault } from "./PersonajeDefault";
+import { PersonajeDefault } from "./PersonajeDefault.js";
 export class Luchador extends PersonajeDefault{
 private ataque:number
 

@@ -1,5 +1,8 @@
-import { PersonajeDefault } from "./PersonajeDefault";
-export class Mago extends PersonajeDefault {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Mago = void 0;
+const PersonajeDefault_js_1 = require("./PersonajeDefault.js");
+class Mago extends PersonajeDefault_js_1.PersonajeDefault {
     constructor(poderMagico, nombre, nivel, puntosDeVida) {
         super(nombre, nivel, puntosDeVida);
         this.poderMagico = poderMagico;
@@ -11,3 +14,4 @@ export class Mago extends PersonajeDefault {
         this.poderMagico = nuevoPoderMagico;
     }
 }
+exports.Mago = Mago;

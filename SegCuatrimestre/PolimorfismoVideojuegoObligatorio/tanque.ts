@@ -1,4 +1,4 @@
-import { PersonajeDefault } from "./PersonajeDefault";
+import { PersonajeDefault } from "./PersonajeDefault.js";
 export class Tanque extends PersonajeDefault {
 private defensa:number
 

@@ -1,4 +1,7 @@
-export class PersonajeDefault {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PersonajeDefault = void 0;
+class PersonajeDefault {
     constructor(nombre, nivel, puntosDeVida) {
         this.nivel = 1;
         this.puntosDeVida = 100;
@@ -31,3 +34,4 @@ export class PersonajeDefault {
         console.log("Defiende!");
     }
 }
+exports.PersonajeDefault = PersonajeDefault;
