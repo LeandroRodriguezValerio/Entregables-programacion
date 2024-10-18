@@ -1,0 +1,10 @@
+import { Mago } from "./mago";
+import { Tanque } from "./tanque";
+import { Luchador } from "./luchador";
+let Brand = new Mago(980, "Brand", 10, 100);
+console.log(Brand);
+let Leona = new Tanque(980, "Leona", 10, 100);
+console.log(Leona);
+let Garen = new Luchador(980, "Garen", 10, 100);
+console.log(Garen);
+Garen.atacar();
