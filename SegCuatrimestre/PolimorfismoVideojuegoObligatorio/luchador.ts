@@ -1,4 +1,4 @@
-import { PersonajeDefault } from "./PersonajeDefault.js";
+import { PersonajeDefault } from "./personajeDefault";
 export class Luchador extends PersonajeDefault{
 private ataque:number
 
@@ -13,6 +13,7 @@ getAtaque():number{
 setAtaque(nuevoataque:number):void{
     this.ataque = nuevoataque
 }
+
 }
 
 

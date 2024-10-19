@@ -1,8 +1,8 @@
 export abstract class PersonajeDefault {
 
 protected nombre:string
-protected nivel:number = 1
-protected puntosDeVida:number = 100
+protected nivel:number
+protected puntosDeVida:number
 
 constructor(nombre:string, nivel:number, puntosDeVida:number){
 this.nombre=nombre
@@ -31,8 +31,20 @@ setPuntosDeVida(nuevoPuntosDeVida:number):void{
     this.puntosDeVida = nuevoPuntosDeVida
 }
 
+
+subirDeNivel(){
+    this.nivel=this.nivel+1
+    console.log(`${this.nombre} sube al nivel ${this.nivel}`)
+
+    if (this.nivel===10){
+        console.log(`${this.nombre} Esta evolucionando! `)
+        console.log(`${this.nombre} Evoluciono Ahora es ¡¡Super ${this.nombre}!! `)
+    }
+}
+
+
 atacar(){
-    console.log("Ataca!")
+    console.log(`${this.nombre} Ataca! `)
 }
 
 

@@ -1,4 +1,4 @@
-import { PersonajeDefault } from "./PersonajeDefault.js";
+import { PersonajeDefault } from "./personajeDefault";
 export class Mago extends PersonajeDefault{
 private poderMagico:number
 
