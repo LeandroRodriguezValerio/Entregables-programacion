@@ -16,6 +16,7 @@ console.log(Leona)
 let Garen:PersonajeDefault = new Luchador (500, "Garen", 1, 60)
 console.log(Garen)
 let Dummy:Monstruo = new Monstruo ("Dummy", 500)
+//let Dummy:Monstruo = new Monstruo ("Dummy", 501)
 console.log (Dummy)
 
 //mostrar 
