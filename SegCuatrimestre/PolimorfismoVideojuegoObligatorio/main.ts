@@ -15,7 +15,7 @@ console.log(Leona)
 
 let Garen:PersonajeDefault = new Luchador (500, "Garen", 1, 60)
 console.log(Garen)
-let Dummy:Monstruo = new Monstruo ("Dummy", 10)
+let Dummy:Monstruo = new Monstruo ("Dummy", 500)
 console.log (Dummy)
 
 //mostrar 
@@ -31,7 +31,9 @@ for (let i = 0; i < 9; i++) {
 }
 }
 if (Garen.getNivel() === 10){
-    Garen = new LuchadorEvolved ("SuperGaren", 10, 90, "Super Ataque", 800)
+    Garen = new LuchadorEvolved ("SuperGaren", 10, 90, 999, 800)
     console.log(`${Garen.getNombre()} Aprendio "Super Ataque"`)
     console.log(Garen)
 }
+Leona.defender()
+Garen.atacar()

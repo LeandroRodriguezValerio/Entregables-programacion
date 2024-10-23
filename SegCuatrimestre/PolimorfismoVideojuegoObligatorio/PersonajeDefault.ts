@@ -43,13 +43,9 @@ subirDeNivel(){
 }
 
 
-atacar(){
-    console.log(`${this.nombre} Ataca! `)
-}
+abstract atacar():void
 
 
-defender(){
-    console.log("Defiende!")
-}
+abstract defender():void
 
 }

@@ -13,6 +13,15 @@ getDefensa():number{
 setDefensa(nuevodefensa:number):void{
     this.defensa = nuevodefensa
 }
+
+atacar(){
+    console.log(`${this.nombre} Atacaa! y hace ${this.defensa} de daño `)
+}
+
+
+ defender(){
+    console.log(`${this.nombre} Defiende ${this.defensa} de daño! `)
+}
 }
 
 

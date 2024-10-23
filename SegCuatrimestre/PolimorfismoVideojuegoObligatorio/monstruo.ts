@@ -20,7 +20,7 @@ constructor(nombre:string,vida:number){
     this.nombre = nuevoNombre
 }
    recibirGolpe(){
-    this.vida= this.vida-10
-    console.log(`${this.nombre} Recibio 10 de daño `)
+    this.vida= this.vida-500
+    console.log(`${this.nombre} Recibio 500 de daño `)
    }
 }
